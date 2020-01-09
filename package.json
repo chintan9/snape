@@ -61,7 +61,7 @@
     "snape-config": "^0.0.1",
     "tempy": "^0.2.1",
     "thepiratebay": "^1.4.7",
-    "url-loader": "^1.0.1",
+    "url-loader": "^3.0.0",
     "vlc-command": "^1.1.1",
     "webtorrent": "^0.98.24",
     "window-or-global": "^1.0.1"
