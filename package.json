@@ -38,7 +38,7 @@
     "app-root-path": "^2.0.1",
     "chai": "^4.1.2",
     "chromecasts": "^1.9.1",
-    "downloads-folder": "^1.0.1",
+    "downloads-folder": "^1.0.2",
     "electron-debug": "^1.5.0",
     "electron-is-dev": "^0.3.0",
     "electron-lets-move": "^0.0.5",
