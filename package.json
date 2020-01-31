@@ -57,7 +57,7 @@
     "query-string": "^6.0.0",
     "range-parser": "^1.2.0",
     "rimraf": "^2.6.2",
-    "sinon": "^4.5.0",
+    "sinon": "^8.1.1",
     "snape-config": "^0.0.1",
     "tempy": "^0.2.1",
     "thepiratebay": "^1.4.7",
