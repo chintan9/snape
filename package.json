@@ -108,7 +108,7 @@
     "rc-slider": "^8.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-ink": "^6.2.0",
+    "react-ink": "^6.4.0",
     "react-lazy-card": "^0.1.8",
     "react-loading-bar": "^0.0.7",
     "react-modal": "^3.3.2",
