@@ -50,7 +50,7 @@
     "lodash": "^4.17.5",
     "mime": "^2.2.2",
     "node-notifier": "^5.2.1",
-    "parse-torrent": "^5.8.3",
+    "parse-torrent": "^7.0.1",
     "pretty-bytes": "^4.0.2",
     "protobufjs": "^6.8.6",
     "pump": "^3.0.0",
