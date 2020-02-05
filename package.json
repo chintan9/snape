@@ -118,7 +118,7 @@
     "react-toastify": "^1.7.0",
     "react-virtualized": "^9.18.5",
     "redux": "^3.7.2",
-    "redux-create-reducer": "^1.1.1",
+    "redux-create-reducer": "^2.0.0",
     "redux-observable": "^0.18.0",
     "rxjs": "^5.5.8",
     "spectre.css": "^0.2.14",
