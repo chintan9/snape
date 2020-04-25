@@ -1,30 +1,66 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Snape
+name: Moose
 
 on:
   push:
-    branches: [ master ]
+    branches: [next]
   pull_request:
-    branches: [ master ]
+    branches: [next]
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
+  build_on_mac:
+    runs-on: macOS-latest
 
     strategy:
       matrix:
         node-version: [12.13.1]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
-      env:
-        CI: true
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm i -g yarn && yarn install --frozen-lockfile && npm run build:mac --if-present
+        env:
+          CI: true
+  build_on_win:
+    runs-on: windows-2016
+
+    strategy:
+      matrix:
+        node-version: [12.13.1]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm i -g yarn && yarn install --frozen-lockfile && npm run build:win --if-present
+        env:
+          CI: true
+  build_on_linux:
+    runs-on: ubuntu-18.04
+
+    strategy:
+      matrix:
+        node-version: [12.13.1]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm i -g yarn && yarn install --frozen-lockfile && npm run build:linux --if-present
+        env:
+          CI: true
