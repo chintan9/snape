@@ -92,7 +92,7 @@
     "husky": "^0.14.0",
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
-    "lint-staged": "^7.0.1",
+    "lint-staged": "^10.2.6",
     "lodash-webpack-plugin": "^0.11.4",
     "mdi": "1.9.33",
     "next": "^5.1.0",
