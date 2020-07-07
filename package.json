@@ -79,7 +79,7 @@
     "css-loader": "^0.28.11",
     "cz-conventional-changelog": "^2.1.0",
     "devtron": "^1.4.0",
-    "electron": "1.8.4",
+    "electron": "7.2.4",
     "electron-builder": "^20.8.1",
     "electron-builder-squirrel-windows": "^20.8.0",
     "electron-devtools-installer": "^2.2.3",
